@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/cardborder">
+
+        <!-- Username EditText -->
+        <EditText
+            android:id="@+id/username_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitolight"
+            android:hint="Enter your name" />
+
+        <!-- Review EditText -->
+        <EditText
+            android:id="@+id/review_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write your review"
+            android:fontFamily="@font/nunitolight"
+            android:layout_below="@+id/username_input"/>
+
+        <!-- RatingBar -->
+        <RatingBar
+            android:id="@+id/review_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:layout_below="@+id/review_text"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_review_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Review"
+            android:fontFamily="@font/nunitoblack"
+            android:background="@drawable/cardborder"
+            android:layout_below="@+id/review_rating"/>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

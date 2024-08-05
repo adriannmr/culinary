@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/cardborder">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lengkong" />
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitoblack"
+            android:text="Lengkong Culinary Night"
+            android:layout_below="@+id/image"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/info_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alamatlengkap"
+            android:layout_below="@id/info_title"
+            android:fontFamily="@font/nunitoextrabold"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/grey" />
+        <TextView
+            android:id="@+id/hari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selasa - Minggu"
+            android:fontFamily="@font/nunitosemibold"
+            android:layout_below="@id/info_description"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/jam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jam"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunitolight"
+            android:textSize="16sp"
+            android:layout_below="@+id/hari"
+            android:textColor="@color/grey" />
+    <Button
+        android:id="@+id/locate_me_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Locate Me"
+        android:textSize="20dp"
+        android:fontFamily="@font/nunitoblack"
+        android:layout_below="@+id/jam"
+        android:background="@drawable/cardborder"
+        android:clickable="true"/>
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

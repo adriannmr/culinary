@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">culinary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alamatlengkap">Jl. Lengkong Kecil, Paledang, Kec. Lengkong, Kota Bandung, Jawa Barat 40261</string>
+    <string name="jam">6.00 PM - 12.00 AM</string>
+    <string name="instagram">"@"lengkongculinary.bdg</string>
+</resources>

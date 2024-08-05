@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/lists"/>
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VENDOR"
+        android:fontFamily="@font/nunitoblack"
+        android:textColor="@color/secondary"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header">
+
+
+    <include
+        android:id="@+id/ws"
+        layout="@layout/warung_steak"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <include
+        android:id="@+id/kenhotbar"
+        layout="@layout/kenhotbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ws"/>
+    <include
+        android:id="@+id/mrcuan"
+        layout="@layout/mrcuan"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/kenhotbar"/>
+    <include
+        android:id="@+id/shinimari"
+        layout="@layout/shinimari"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mrcuan"/>
+    <include
+        android:id="@+id/cerita"
+        layout="@layout/cerita"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/shinimari"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

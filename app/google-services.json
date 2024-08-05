@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "467511600064",
+    "project_id": "culinary-21f0b",
+    "storage_bucket": "culinary-21f0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467511600064:android:9964d82122d03e82019e25",
+        "android_client_info": {
+          "package_name": "com.adrian.culinary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBElH5l6b9u96xODFvY3_wdPvj25tCnfqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "databaseURL": "https://culinary-21f0b-default-rtdb.asia-southeast1.firebasedatabase.app",
+  "configuration_version": "1"
+}
